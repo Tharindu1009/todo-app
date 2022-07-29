@@ -4,10 +4,11 @@ import { TodoData } from "../../data/TodoData";
 
 export const todoSlice = createSlice({
     name: "todos",
-    initialState: { list: TodoData, errorMessage: "", loading: false },
+    initialState: { list: TodoData, successMessage: "", loading: false },
     reducers: {
         addTodo: (state, action) => {
             state.list.unshift(action.payload);
+            state.successMessage = "Task added successfully."
         },
         updateTodo: (state, action) => {
             state.list.map((todo) => {
@@ -16,11 +17,11 @@ export const todoSlice = createSlice({
                 }
             })
         },
-        clearErrorMessage: (state, action) => {
-            state.errorMessage = "";
+        clearMessages: (state, action) => {
+            state.successMessage = "";
         },
     },
 });
 
-export const { addTodo, updateTodo,clearErrorMessage } = todoSlice.actions;
+export const { addTodo, updateTodo,clearMessages } = todoSlice.actions;
 export default todoSlice.reducer;

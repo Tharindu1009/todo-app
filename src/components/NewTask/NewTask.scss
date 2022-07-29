@@ -1,0 +1,43 @@
+@import '../../App.scss';
+
+.task-modal {
+    width: 400px;
+    background-color: $white-gray;
+    position: absolute;
+    border-radius: 4px;
+    border: 1px solid $dark-gray;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+
+    .modal-header {
+        padding: 10px;
+        border-bottom: 1px solid $light-gray;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .modal-body {
+        padding: 20px;
+        background-color: $white;
+
+        .form-control{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .modal-footer{
+        text-align: right;
+        border-top: 1px solid $light-gray;
+        padding: 10px;
+
+        .close-btn {
+            border: 1px solid $light-gray;
+            margin-right: 5px;
+            color: $dark-gray;
+        }
+    }
+}

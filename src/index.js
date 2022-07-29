@@ -8,7 +8,6 @@ import { configureStore } from '@reduxjs/toolkit';
 import loginReducer from './redux/features/login';
 import todoReducer from './redux/features/todos';
 
-
 const store = configureStore({
   reducer:{
       login: loginReducer,
