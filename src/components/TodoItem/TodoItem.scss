@@ -1,0 +1,78 @@
+@import '../../App.scss';
+
+.main-conatiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .info-container{
+        padding: 10px 0px 10px 0px;
+        border-bottom: 1px solid $light-gray;
+        width: 95%;
+        cursor: pointer;
+        display: flex;
+
+        .uncomplete-tick {
+            height: 25px;
+            width: 25px;
+            background-color: $white;
+            border: 2px solid $light-gray;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+    
+        .complete-tick {
+            height: 25px;
+            width: 25px;
+            background-color: $light-green;
+            border: 2px solid $light-gray;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .task-name {
+            font-size: 13px;
+            font-weight: bold;
+            color: $ash-gray;
+            padding-top: 5px;
+            padding-left: 10px;
+            cursor: pointer;
+        }
+    
+        .priority-label {
+            height: 25px;
+            width: 60px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: $white;
+            float: right;
+            padding-top: 5px;
+            margin-left: auto;
+        
+            &__high {
+                background-color: $red;
+            }
+    
+            &__med {
+                background-color: $yellow;
+            }
+    
+            &__low {
+                background-color: $green;
+            }
+        }
+    
+        .check {
+            color: $light-gray;
+            font-size: 20px;
+        }
+    }
+
+}

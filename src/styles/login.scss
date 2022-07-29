@@ -1,0 +1,28 @@
+@import '../App.scss';
+
+/* Login Page Styles */
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form-container{
+        background-color: $white-gray;
+        border-radius: 4px;
+        box-shadow: 0 4px 4px -5px $light-gray;
+        margin-top: 5%;
+        padding: 20px;
+        width: 25%;
+
+        .form-control{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .btn-submit{
+            float: right;
+            margin-bottom: 10px;
+        }
+    }
+}

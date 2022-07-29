@@ -1,0 +1,15 @@
+
+@import '../../App.scss';
+
+.btn{
+    width: fit-content;
+    font-size: 13px;
+    font-weight: bold;
+    color: $white;
+    background-color: $sky-blue;
+    margin-top: 24px;
+    height: 36px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}

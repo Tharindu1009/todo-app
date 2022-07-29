@@ -1,0 +1,39 @@
+@import '../../App.scss';
+
+.header {
+    width: 100%;
+    border-top: 3px solid $dark-gray;
+    border-bottom: 1px solid $light-gray;
+    display: flex;
+
+    .icon-wrapper {
+        padding: 5px;
+        height: 45px;
+        width: 50px;
+        border-right: 1px solid $light-gray;
+        display: inline-block;
+
+        .icon {
+            color: $dark-gray;
+            font-size: 45px;
+        }
+    }
+
+    .nav-title-wrapper {
+        padding: 15px 0px 0px 30px;
+        font-weight: bold;
+        color: $dark-gray;
+    }
+}
+
+.sub-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: '100%';
+    border-bottom: 1px solid $light-gray;
+    padding: 5px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 25px;
+    box-shadow: 0 4px 4px -5px $dark-gray;
+}
